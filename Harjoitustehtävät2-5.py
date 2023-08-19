@@ -1,0 +1,17 @@
+leiviskamaara = int(input("Anna leiviskät. \n"))
+naulatmaara = int(input("Anna Naulat. \n"))
+luoditmaara = float(input("Anna luodit. \n"))
+
+luoti = 13.3
+naula = 32 * luoti
+leiviska = 20 * naula
+
+summa = (luoti * luoditmaara) + (naula * naulatmaara) + (leiviska * leiviskamaara)
+
+laskelmakg = int(summa//1000)
+laskelmag = float(round(summa%1000,2))
+
+print("Massa nykymittojen mukaan:")
+print(f"{laskelmakg} kilogrammaa ja {laskelmag} grammaa.")
+
+
