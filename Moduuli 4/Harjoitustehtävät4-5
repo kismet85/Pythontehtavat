@@ -1,0 +1,13 @@
+kayttajatunnus = "python"
+salasana = "rules"
+yrittamisKerrat = 0
+
+while yrittamisKerrat < 5:
+    login = input("Syötä käyttäjätunnus: \n")
+    sala = input("Syötä salasana: \n")
+    yrittamisKerrat+=1
+    if login == kayttajatunnus and sala == salasana:
+        print("Tervetuloa")
+        break
+    elif yrittamisKerrat > 4:
+        print("Pääsy evätty.")
