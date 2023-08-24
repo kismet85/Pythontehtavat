@@ -13,5 +13,3 @@ laskelmag = float(round(summa%1000,2))
 
 print("Massa nykymittojen mukaan:")
 print(f"{laskelmakg} kilogrammaa ja {laskelmag} grammaa.")
-
-

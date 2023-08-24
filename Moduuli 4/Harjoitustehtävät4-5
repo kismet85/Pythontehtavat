@@ -11,4 +11,3 @@ while yrittamisKerrat < 5:
         break
     elif yrittamisKerrat > 4:
         print("Pääsy evätty.")
-
