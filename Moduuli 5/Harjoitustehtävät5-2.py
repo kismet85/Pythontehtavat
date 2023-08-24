@@ -1,6 +1,5 @@
 numerot = []
 
-
 numba = input("Syötä luku: \n")
 while numba!="":
     num1 = float(numba)
