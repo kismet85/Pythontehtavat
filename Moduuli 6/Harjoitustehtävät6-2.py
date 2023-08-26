@@ -7,9 +7,8 @@ import random
 
 nopanhaku = 6
 noppasumma = 0
-while True:
-    nopanarvo = random.randint(1,6)
+maxSilmaLuku = int(input("Syötä maksimisilmäluku: \n"))
+while noppasumma<maxSilmaLuku:
+    nopanarvo = random.randint(1,21)
     print(f"Nopanarvo on {nopanarvo}")
     noppasumma += nopanarvo
-    if(noppasumma==21):
-        break
