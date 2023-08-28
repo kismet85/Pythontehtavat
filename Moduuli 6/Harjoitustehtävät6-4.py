@@ -3,7 +3,7 @@
 
 lukulista = []
 
-def summa():
+def summa(lukulista):
     summa = 0
     lista = lukulista
     for luku in lista:
@@ -17,5 +17,5 @@ while True:
     else:
         break
 
-summa()
+summa(lukulista)
 
