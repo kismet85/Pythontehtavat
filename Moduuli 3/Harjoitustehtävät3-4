@@ -1,18 +1,6 @@
-sukupuoli = input("Syötä sukupuolesi, N: Nainen M: Mies: \n")
-if sukupuoli=="N" or sukupuoli=="n":
-    sukupuoli="Nainen"
-elif sukupuoli=="M" or sukupuoli=="m":
-    sukupuoli="Mies"
 
-hemoGlobiiniArvo = int(input("Syötä hemoglobiiniarvo: g/l \n"))
-
-if sukupuoli == "Nainen" and hemoGlobiiniArvo < 117:
-    print("Sinun hemoglobiiniarvo on alhainen.")
-elif sukupuoli == "Nainen" and hemoGlobiiniArvo > 175:
-    print("Sinun hemoglobiiniarvo on korkea.")
-elif sukupuoli == "Mies" and hemoGlobiiniArvo < 134:
-    print("Sinun hemoglobiiniarvo on alhainen.")
-elif sukupuoli == "Mies" and hemoGlobiiniArvo > 195:
-    print("Sinun hemoglobiiniarvo on korkea.")
+vuosi = int(input("Syötä vuosi: \n"))
+if vuosi % 4 == 0 and (vuosi % 100 != 0 or vuosi % 400 == 0):
+    print("Annettu vuosi on karkausvuosi.")
 else:
-    print("Sinun hemoglobiiniarvo on normaali.")
+    print("Annettu vuosi ei ole karkausvuosi")
