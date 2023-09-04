@@ -4,11 +4,17 @@
 # joka kysytään käyttäjältä ohjelman suorituksen alussa.
 
 import random
+def noppa():
+    return random.randint(1, 21)
 
-nopanhaku = 6
-noppasumma = 0
-maxSilmaLuku = int(input("Syötä maksimisilmäluku: \n"))
-while noppasumma<maxSilmaLuku:
-    nopanarvo = random.randint(1,21)
-    print(f"Nopanarvo on {nopanarvo}")
-    noppasumma += nopanarvo
+def main():
+    noppasumma = 0
+    maxSilmaLuku = int(input("Syötä maksimisilmäluku: \n"))
+    while noppasumma<maxSilmaLuku:
+        noppa1 = noppa()
+        print(f"Nopanarvo on {noppa1}")
+        noppasumma += noppa1
+        if noppasumma >= maxSilmaLuku:
+            break
+
+main()
