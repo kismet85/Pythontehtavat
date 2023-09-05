@@ -10,14 +10,16 @@ def summa(lukulista):
         summa = summa + luku
     print(summa)
 
-while True:
-    luku = input("Syötä luku. \n")
-    if luku!="":
-        lukulista.append(int(luku))
-    else:
-        break
+def main():
+    while True:
+        luku = input("Syötä luku. \n")
+        if luku!="":
+            lukulista.append(int(luku))
+        else:
+            break
 
-summa(lukulista)
+    summa(lukulista)
 
+main()
 
 
