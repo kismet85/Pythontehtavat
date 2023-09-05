@@ -23,7 +23,7 @@ def yksikkoHinta(halkaisija, hinta,kutsuttu):
     area = (math.pi * (((halkaisija/100) / 2) ** 2))
     yksikkohinta=hinta/area
     hinta = float(round(yksikkohinta, 2))
-    print(f"Pizza {kutsuttu} hinta on {hinta}")
+    print(f"Pizza {kutsuttu} hinta on {hinta} euroa per neliömetri.")
 
 
 
