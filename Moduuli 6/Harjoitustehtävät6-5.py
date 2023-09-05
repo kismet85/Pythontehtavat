@@ -11,11 +11,14 @@ def summa(lukulista):
     print(lukulista)
     print(paritonLista)
 
-while True:
-    luku = input("Syötä luku. \n")
-    if luku!="":
-        lukulista.append(int(luku))
-    else:
-        break
+def main():
+    while True:
+        luku = input("Syötä luku. \n")
+        if luku!="":
+            lukulista.append(int(luku))
+        else:
+            break
 
-summa(lukulista)
+    summa(lukulista)
+
+main()
