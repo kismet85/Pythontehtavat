@@ -4,14 +4,15 @@
 
 def laskeGallonat(gallonat):
     litra = gallonat*3.785
-    print(litra)
+    print(f"Syöttämäsi gallonamäärä on litroina {litra}")
     return
-gallonaMaara = 1
 
-while True:
-    gallonaMaara = float((input("Syötä gallonamäärä: \n")))
-    if gallonaMaara>0:
-        laskeGallonat(gallonaMaara)
-    else:
-        break
-print("Syötit pienemmän määrän kuin 0.")
+def main():
+    while True:
+        gallonaMaara = float((input("Syötä gallonamäärä: \n")))
+        if gallonaMaara>0:
+            laskeGallonat(gallonaMaara)
+        else:
+            break
+    print("Syötit pienemmän määrän kuin 0.")
+main()
