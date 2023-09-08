@@ -8,11 +8,13 @@ def laskeGallonat(gallonat):
     return
 
 def main():
-    while True:
-        gallonaMaara = float((input("Syötä gallonamäärä: \n")))
+    gallonaMaara = float((input("Syötä gallonamäärä: \n")))
+    while gallonaMaara!=0:
         if gallonaMaara>0:
             laskeGallonat(gallonaMaara)
+            gallonaMaara = float((input("Syötä gallonamäärä: \n")))
         else:
             break
     print("Syötit pienemmän määrän kuin 0.")
+
 main()
