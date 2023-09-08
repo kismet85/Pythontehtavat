@@ -8,8 +8,7 @@ def summa(lukulista):
     lista = lukulista
     for luku in lista:
         summa = summa + luku
-    print(summa)
-
+    return print(f"Lukujen yhteinen summa on: {summa}")
 def main():
     while True:
         luku = input("Syötä luku. \n")
