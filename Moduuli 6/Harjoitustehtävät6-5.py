@@ -8,14 +8,15 @@ def summa(lukulista):
     for luku in lukulista:
         if luku%2!=0:
            paritonLista.append(luku)
-    print(lukulista)
-    print(paritonLista)
-
+    print(f"Lista missä on kaikki luvut: {lukulista}")
+    print(f"Lista missä on parittomat luvut {paritonLista}")
+    return
 def main():
-    while True:
-        luku = input("Syötä luku. \n")
+    luku = input("Syötä luku. \n")
+    while luku!="":
         if luku!="":
             lukulista.append(int(luku))
+            luku = input("Syötä luku. \n")
         else:
             break
 
