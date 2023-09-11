@@ -5,17 +5,15 @@
 nimet = set()
 
 def nimikysely():
-    nimi = input("Syötä nimi: \n")
-
-    while nimi!="":
-        for nimijoukko in nimet:
-            if nimijoukko!=nimi:
-                print("Uusi nimi.")
-                break
-            elif nimijoukko==nimi:
-                print("Nimi syötettiin jo. ")
-        nimet.add(nimi)
+    while True:
         nimi = input("Syötä nimi: \n")
+        if nimi == "":
+            break
+        if nimi in nimet:
+            print("Aiemmin syötetty nimi")
+        else:
+            print("Uusi nimi")
+            nimet.add(nimi)
 
 def main():
     nimikysely()
