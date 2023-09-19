@@ -7,7 +7,7 @@ def kysynta():
     maakoodiSyote = input("Syötä maakoodi(Esim. FI): \n")
     while maakoodiSyote!="":
         haettava = haeLentokenttaICAO(maakoodiSyote)
-        print(f"{haettava[1] ,haettava[4]}")
+        print(f"{haettava[1] ,haettava[2],haettava[3],haettava[4]}")
         maakoodiSyote = input("Syötä maakoodi(Esim. FI): \n")
 
 
