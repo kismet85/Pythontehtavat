@@ -65,7 +65,7 @@ def main():
         autolista.append(auto)
 
     kilpailu = Kilpailu("Suuri romuralli", 8000, autolista)
-
+    print(f"Kilpailu {kilpailu.nimi} alkaa, kilpailu on {kilpailu.pituus_km} km pitkä ja kilpailussa on {len(kilpailu.autolista)} autoa.")
     kilpailu_loppuu = False
     while not kilpailu_loppuu:
         kilpailu.tunti_kuluu()
