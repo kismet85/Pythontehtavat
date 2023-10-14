@@ -31,14 +31,16 @@ class Hissi:
                 self.kerros -= 1
                 print(f"matkustit hissillä kerroksen alemmas")
                 print(f"Olet kerroksessa {self.kerros}")
-    def siirry_kerrokseen(self,kerroksia):
-        if self.kerros > kerroksia:
-            for kerros in range(kerroksia,self.kerros):
+
+    def siirry_kerrokseen(self, kerroksia):
+        if self.kerros == kerroksia:
+            print("Olet jo kohteessa")
+        elif self.kerros > kerroksia:
+            for kerros in range(kerroksia, self.kerros):
                 self.kerros_alas(1)
         else:
             for kerros in range(1, kerroksia):
                 self.kerros_ylös(1)
-
 
 
 hissi = Hissi(1,10)
